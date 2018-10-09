@@ -1,4 +1,5 @@
 /node_modules
+/resources_do-not-push
 
 # Unfortunately we have to push these files to github so that we can view remotely on iPhone etc.
 

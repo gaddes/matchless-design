@@ -35,7 +35,7 @@ nav {
 }
 
 .hero {
-    background-image: url("../resources/images/hero.jpeg");
+    background-image: url("../resources/images/hero_1.jpeg");
     background-size: cover;
     margin-top: $navbar-height;
     height: calc(100vh - #{$navbar-height});
@@ -150,8 +150,8 @@ nav {
 }
 
 .thumb{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 // BOOTSTRAP must be imported last

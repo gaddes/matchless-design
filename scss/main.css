@@ -42,7 +42,7 @@ nav .navbar-nav .nav-item .nav-link:hover {
   padding-bottom: 0.4rem; }
 
 .hero {
-  background-image: url("../resources/images/hero.jpeg");
+  background-image: url("../resources/images/hero_1.jpeg");
   background-size: cover;
   margin-top: 40px;
   height: calc(100vh - 40px);
@@ -141,8 +141,8 @@ nav .navbar-nav .nav-item .nav-link:hover {
   display: block; }
 
 .thumb {
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
 
 *,
 *::before,
