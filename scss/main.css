@@ -67,9 +67,24 @@ nav .navbar-nav .nav-item .nav-link:hover {
   z-index: -5;
   height: 0; }
 
+.main-body {
+  min-height: calc(100vh - 100px);
+  padding-bottom: 30px; }
+
+.main-body.main-body-margin {
+  margin-top: 70px; }
+
 .main-body h1 {
-  border-top: solid 2px grey;
   margin-bottom: 1rem; }
+
+footer {
+  height: 30px;
+  position: absolute;
+  bottom: 0px; }
+
+.img-project {
+  max-width: 350px;
+  height: 250px; }
 
 .mdi::before {
   font-size: 24px;
