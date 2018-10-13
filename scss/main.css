@@ -82,9 +82,107 @@ footer {
   position: absolute;
   bottom: 0px; }
 
-.img-project {
+.project {
+  padding: 1.5rem 0;
+  border-top: 1px solid grey; }
+
+.project:first-child {
+  border-top: none; }
+
+.project .project-body, .project img {
+  margin: 0 1.5rem; }
+
+@media only screen and (max-width: 768px) {
+  .project .project-body {
+    order: -1; } }
+
+.project img {
   max-width: 350px;
-  height: 250px; }
+  height: 250px;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.project img:hover {
+  opacity: 0.7; }
+
+.project .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 15;
+  /* Sit on top */
+  padding-top: 7rem;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */ }
+
+.project .modal img:hover {
+  cursor: default; }
+
+.project .modal img:hover {
+  opacity: 1; }
+
+.project .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  height: auto; }
+
+.project .caption {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  color: lightgrey;
+  font-size: 1.5rem;
+  margin-top: 2rem; }
+
+.project .modal-content, .project .caption {
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+.project .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s; }
+
+.project .close:hover,
+.project .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer; }
+
+.contact-details:first-child {
+  border-right: 1px solid grey; }
+
+@media only screen and (max-width: 768px) {
+  .contact-details:first-child {
+    border-right: none; } }
 
 .mdi::before {
   font-size: 24px;

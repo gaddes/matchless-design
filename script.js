@@ -94,3 +94,31 @@ switch (e.which) {
 }
 e.preventDefault(); // prevent the default action (scroll / move caret)
 });
+
+
+// MODAL
+// 
+// 
+// Show image MODAL
+var expandImage = function (idName) {
+    // Get image
+    var img = document.querySelector("#" + ("" + idName) + " > img");
+    // Get modal
+    var modal = document.querySelector("#" + ("" + idName) + " .modal");
+    // Get modal image
+    var modalImg = document.querySelector("#" + ("" + idName) + " .modal > img");
+    // Get "alt" text
+    var captionText = document.querySelector("#" + ("" + idName) + " .modal > .caption");
+    // Set image and caption text
+    modalImg.src = img.src; // TODO: update this so that the thumbnail image is a lower resolution than the large modal image
+    captionText.innerHTML = img.alt;
+    // Show modal
+    modal.style.display = "block";
+};
+// Hide image MODAL
+var closeModal = function (idName) {
+    // Get modal
+    var modal = document.querySelector("#" + ("" + idName) + " .modal");
+    // Close modal
+    modal.style.display = "none";
+};
