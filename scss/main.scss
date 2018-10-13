@@ -34,6 +34,10 @@ nav {
     }
 }
 
+// 
+// INDEX.html
+// 
+
 .hero {
     background-image: url("../resources/images/hero_1.jpeg");
     background-size: cover;
@@ -42,6 +46,11 @@ nav {
     color: $colour-standard;
     .hero-content {
         margin-top: auto;
+        @media only screen and (max-width: 576px) {
+            .subtitle {
+                display: none; // Hide subtitle on small screens because hero is too cramped
+            }
+        }
     }
     .hero-scroll {
         margin-top: auto;
