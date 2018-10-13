@@ -63,10 +63,28 @@ nav {
 }
 
 .main-body {
+    // TODO: remove magic number (30px) in calc below
+    min-height: calc(100vh - #{$navbar-height + $footer-height + 30px}); // Required to ensure footer stays at bottom of page when there is not much text
+    padding-bottom: $footer-height;
+    &.main-body-margin {
+        margin-top: $navbar-height + 30px; // TODO: remove magic number (30px) in calc
+    }
     h1 {
-        border-top: solid $line-weight-light $colour-grey;
         margin-bottom: 1rem;
     }
+}
+
+footer {
+    height: $footer-height;
+    position: absolute;
+    bottom: 0px;
+}
+
+// TODO: IMAGES - reposition this code?
+
+.img-project {
+    max-width: 350px;
+    height: 250px;
 }
 
 // 
